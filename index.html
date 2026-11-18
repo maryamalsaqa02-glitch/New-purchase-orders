@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>New purchase order | Smart Warehouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="new-purchase-orders.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <svg
+            class="brandmark"
+            aria-hidden="true"
+            preserveAspectRatio="none"
+            overflow="visible"
+            style="display: block"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="svg1-Warehouse mark" clip-path="url(#svg1-clip0_0_96)">
+              <rect
+                id="svg1-Box seam"
+                x="12.6295"
+                y="14.4103"
+                width="0.485714"
+                height="1.45714"
+                fill="#001322"
+              />
+              <rect
+                id="svg1-Inventory box"
+                x="10.5251"
+                y="14.4103"
+                width="4.69524"
+                height="4.37143"
+                rx="0.32381"
+                fill="url(#svg1-paint0_linear_0_96)"
+              />
+              <rect
+                id="svg1-Box seam_2"
+                x="7.28577"
+                y="14.4103"
+                width="0.485714"
+                height="1.45714"
+                fill="#001322"
+              />
+              <rect
+                id="svg1-Inventory box_2"
+                x="5.18297"
+                y="14.4103"
+                width="4.69524"
+                height="4.37143"
+                rx="0.32381"
+                fill="url(#svg1-paint1_linear_0_96)"
+              />
+              <rect
+                id="svg1-Box seam_3"
+                x="10.0393"
+                y="9.55479"
+                width="0.485714"
+                height="1.45714"
+                fill="#001322"
+              />
+              <rect
+                id="svg1-Inventory box_3"
+                x="7.77086"
+                y="9.55479"
+                width="4.85714"
+                height="4.37143"
+                rx="0.32381"
+                fill="url(#svg1-paint2_linear_0_96)"
+              />
+              <path
+                id="svg1-Warehouse outline"
+                d="M0.647785 4.61287L9.55255 0.164745C9.98429 -0.0549151 10.416 -0.0549151 10.8478 0.164745L19.7525 4.61287C20.1843 4.83253 20.4002 5.21693 20.4002 5.76608V18.122C20.4002 18.5613 20.1843 18.781 19.7525 18.781H18.6192V6.09557L10.2002 1.8122L1.78112 6.09557V18.781H0.647785C0.216039 18.781 0.000165939 18.5613 0.000165939 18.122V5.76608C0.000165939 5.21693 0.216039 4.83253 0.647785 4.61287Z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                fill="url(#svg1-paint3_linear_0_96)"
+              />
+            </g>
+            <defs>
+              <linearGradient
+                id="svg1-paint0_linear_0_96"
+                x1="10.5251"
+                y1="14.4103"
+                x2="15.2204"
+                y2="14.4103"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#A0B4D6" />
+                <stop offset="0.6" stop-color="#4B6DC5" />
+              </linearGradient>
+              <linearGradient
+                id="svg1-paint1_linear_0_96"
+                x1="5.18297"
+                y1="14.4103"
+                x2="9.87821"
+                y2="14.4103"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#A0B4D6" />
+                <stop offset="0.6" stop-color="#4B6DC5" />
+              </linearGradient>
+              <linearGradient
+                id="svg1-paint2_linear_0_96"
+                x1="7.77086"
+                y1="9.55479"
+                x2="12.628"
+                y2="9.55479"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#A0B4D6" />
+                <stop offset="0.6" stop-color="#4B6DC5" />
+              </linearGradient>
+              <linearGradient
+                id="svg1-paint3_linear_0_96"
+                x1="0.000165939"
+                y1="0"
+                x2="20.4002"
+                y2="0"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#A0B4D6" />
+                <stop offset="0.6" stop-color="#4B6DC5" />
+              </linearGradient>
+              <clipPath id="svg1-clip0_0_96">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span>Smart <b>Warehouse</b></span>
+        </div>
+        <nav aria-label="Main navigation">
+          <p class="group" data-i18n="operations">OPERATIONS</p>
+          <a class="nav-item" href="../dashboard%20admin/dash.html"
+            ><svg
+              class="ico"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              overflow="visible"
+              style="display: block"
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="svg2-layout-dashboard" clip-path="url(#svg2-clip0_0_70)">
+                <path
+                  id="svg2-Vector"
+                  d="M2.16667 1.625H4.875C5.17415 1.625 5.41667 1.86751 5.41667 2.16667V5.95833C5.41667 6.25749 5.17415 6.5 4.875 6.5H2.16667C1.86751 6.5 1.625 6.25749 1.625 5.95833V2.16667C1.625 1.86751 1.86751 1.625 2.16667 1.625ZM8.125 1.625H10.8333C11.1325 1.625 11.375 1.86751 11.375 2.16667V3.79167C11.375 4.09082 11.1325 4.33333 10.8333 4.33333H8.125C7.82585 4.33333 7.58333 4.09082 7.58333 3.79167V2.16667C7.58333 1.86751 7.82585 1.625 8.125 1.625ZM8.125 6.5H10.8333C11.1325 6.5 11.375 6.74251 11.375 7.04167V10.8333C11.375 11.1325 11.1325 11.375 10.8333 11.375H8.125C7.82585 11.375 7.58333 11.1325 7.58333 10.8333V7.04167C7.58333 6.74251 7.82585 6.5 8.125 6.5ZM2.16667 8.66667H4.875C5.17415 8.66667 5.41667 8.90918 5.41667 9.20833V10.8333C5.41667 11.1325 5.17415 11.375 4.875 11.375H2.16667C1.86751 11.375 1.625 11.1325 1.625 10.8333V9.20833C1.625 8.90918 1.86751 8.66667 2.16667 8.66667Z"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke="#CDD4E1"
+                />
+              </g>
+              <defs>
+                <clipPath id="svg2-clip0_0_70">
+                  <rect width="13" height="13" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span data-i18n="dashboard">Dashboard</span></a
+          >
+          <a class="nav-item" href="../Alerts/alerts.html"
+            ><svg
+              class="ico"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              overflow="visible"
+              style="display: block"
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="svg3-bell" clip-path="url(#svg3-clip0_0_104)">
+                <path
+                  id="svg3-Vector"
+                  d="M5.56116 11.3754C5.65625 11.5401 5.793 11.6769 5.95769 11.772C6.12237 11.867 6.30918 11.9171 6.49934 11.9171C6.6895 11.9171 6.87631 11.867 7.041 11.772C7.20568 11.6769 7.34244 11.5401 7.43753 11.3754M1.76652 8.30176C1.69576 8.37932 1.64906 8.47578 1.63211 8.5794C1.61516 8.68301 1.62868 8.78933 1.67103 8.8854C1.71338 8.98147 1.78274 9.06317 1.87066 9.12054C1.95859 9.17792 2.06129 9.20851 2.16628 9.20858H10.8331C10.9381 9.20862 11.0408 9.17815 11.1288 9.12088C11.2168 9.06362 11.2862 8.98201 11.3287 8.886C11.3712 8.78999 11.3848 8.68371 11.368 8.58008C11.3512 8.47646 11.3046 8.37995 11.234 8.3023C10.5135 7.55961 9.74977 6.77034 9.74977 4.33317C9.74977 3.47115 9.40736 2.64443 8.79785 2.03488C8.18834 1.42534 7.36168 1.0829 6.4997 1.0829C5.63773 1.0829 4.81107 1.42534 4.20156 2.03488C3.59205 2.64443 3.24964 3.47115 3.24964 4.33317C3.24964 6.77034 2.48533 7.55961 1.76652 8.30176Z"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke="#CDD4E1"
+                />
+              </g>
+              <defs>
+                <clipPath id="svg3-clip0_0_104">
+                  <rect width="13" height="13" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span data-i18n="alerts">Alerts</span><i class="badge">5</i></a
+          >
+          <a class="nav-item" href="../inventory2/index.html"
+            ><svg
+              class="ico"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              overflow="visible"
+              style="display: block"
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="svg4-box" clip-path="url(#svg4-clip0_0_106)">
+                <path
+                  id="svg4-Vector"
+                  d="M1.78739 3.79163L6.49989 6.50012M6.49989 6.50012L11.2124 3.79163M6.49989 6.50012L6.5 11.9159M6.5 11.9159V11.9171M6.5 11.9159C6.30984 11.9159 6.12302 11.8659 5.95833 11.7708L2.16667 9.604C2.00214 9.509 1.86549 9.37241 1.77042 9.20793C1.67534 9.04344 1.62519 8.85685 1.625 8.66686V4.33328C1.62519 4.14329 1.67534 3.95669 1.77042 3.79221C1.86549 3.62772 2.00214 3.49113 2.16667 3.39614L5.95833 1.22935C6.12302 1.13426 6.30984 1.0842 6.5 1.0842C6.69017 1.0842 6.87698 1.13426 7.04167 1.22935L10.8333 3.39614C10.9979 3.49113 11.1345 3.62772 11.2296 3.79221C11.3247 3.95669 11.3748 4.14329 11.375 4.33328V8.66686C11.3748 8.85685 11.3247 9.04344 11.2296 9.20793C11.1345 9.37241 10.9979 9.509 10.8333 9.604L7.04167 11.7708C6.87698 11.8659 6.69017 11.9159 6.5 11.9159Z"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke="#CDD4E1"
+                />
+              </g>
+              <defs>
+                <clipPath id="svg4-clip0_0_106">
+                  <rect width="13" height="13" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span data-i18n="inventory">Inventory</span></a
+          >
+          <a class="nav-item" href="../Products/product.html"
+            ><svg
+              class="ico"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              overflow="visible"
+              style="display: block"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="svg5-barcode">
+                <path
+                  id="svg5-Vector"
+                  d="M2 3.3328V12.6672M5.33333 3.3328V12.6672M8 3.3328V12.6672M11.3333 3.3328V12.6672M14 3.3328V12.6672"
+                  stroke-linecap="round"
+                  stroke="white"
+                />
+              </g>
+            </svg>
+            <span data-i18n="products">Products</span></a
+          >
+          <p class="group planning" data-i18n="planning">PLANNING</p>
+          <a class="nav-item" href="../AI%20forecast1/ai.html"
+            ><svg
+              class="ico"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              overflow="visible"
+              style="display: block"
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="svg6-trending-up">
+                <path
+                  id="svg6-Vector"
+                  d="M11.9171 7.04158V3.7921H8.66684M11.9171 3.7921L7.31257 8.39553L4.60402 5.68763L1.0829 9.2079"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke="#CDD4E1"
+                />
+              </g>
+            </svg>
+            <span data-i18n="forecast">AI forecast</span></a
+          >
+          <a class="nav-item active" href="./index.html" aria-current="page"
+            ><span data-i18n="orders">Purchase orders</span
+            ><i class="badge">6</i></a
+          >
+          <a class="nav-item" href="../suppliers%20search/index.html"
+            ><svg
+              class="ico"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              overflow="visible"
+              style="display: block"
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="svg8-truck">
+                <path
+                  id="svg8-Vector"
+                  d="M7.58342 9.74967V4.33355M7.58342 9.74967H8.12513M7.58342 9.74967H4.87487M7.58342 4.33355V3.25032C7.58342 2.96304 7.46927 2.68751 7.26609 2.48437C7.06291 2.28123 6.78734 2.1671 6.5 2.1671H2.16632C1.87898 2.1671 1.60341 2.28123 1.40023 2.48437C1.19705 2.68751 1.0829 2.96304 1.0829 3.25032V9.20806C1.0829 9.35171 1.13997 9.48947 1.24156 9.59104C1.34315 9.69261 1.48094 9.74967 1.62461 9.74967H2.70803M7.58342 4.33355H9.49024C9.57143 4.33367 9.65156 4.35203 9.7247 4.38728C9.79783 4.42253 9.86211 4.47376 9.91277 4.5372L11.7979 6.89321C11.8749 6.98908 11.9169 7.10826 11.9171 7.23118V9.20806C11.9171 9.35171 11.86 9.48947 11.7584 9.59104C11.6568 9.69261 11.5191 9.74967 11.3754 9.74967H10.292M2.70803 9.74967C2.70803 10.3479 3.19309 10.8329 3.79145 10.8329C4.38981 10.8329 4.87487 10.3479 4.87487 9.74967M2.70803 9.74967C2.70803 9.15143 3.19309 8.66645 3.79145 8.66645C4.38981 8.66645 4.87487 9.15143 4.87487 9.74967M8.12513 9.74967C8.12513 10.3479 8.61019 10.8329 9.20855 10.8329C9.80691 10.8329 10.292 10.3479 10.292 9.74967M8.12513 9.74967C8.12513 9.15143 8.61019 8.66645 9.20855 8.66645C9.80691 8.66645 10.292 9.15143 10.292 9.74967"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke="#CDD4E1"
+                />
+              </g>
+            </svg>
+            <span data-i18n="suppliers">Suppliers</span></a
+          >
+          <a class="nav-item" href="../Reports/reports.html"
+            ><svg
+              class="ico"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              overflow="visible"
+              style="display: block"
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="svg9-chart-no-axes-column">
+                <path
+                  id="svg9-Vector"
+                  d="M2.7079 11.375V8.125M6.5 11.375V1.625M10.2921 11.375V4.875"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke="#CDD4E1"
+                />
+              </g>
+            </svg>
+            <span data-i18n="reports">Reports</span></a
+          >
+        </nav>
+        <div class="account">
+          <div class="avatar" data-i18n="initials">WM</div>
+          <div class="account-copy">
+            <strong data-i18n="accountName">Warehouse Ma...</strong
+            ><span data-i18n="manager">Manager</span>
+          </div>
+          <button
+            class="users"
+            id="usersToggle"
+            type="button"
+            aria-label="5 users"
+            aria-controls="usersPanel"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          >
+            <svg
+              class=""
+              aria-hidden="true"
+              preserveAspectRatio="none"
+              overflow="visible"
+              style="display: block"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="svg10-Users outline">
+                <path
+                  id="svg10-Vector"
+                  d="M12 15.75V14.25C12 13.4544 11.6839 12.6913 11.1213 12.1287C10.5587 11.5661 9.79565 11.25 9 11.25H4.5C3.70435 11.25 2.94129 11.5661 2.37868 12.1287C1.81607 12.6913 1.5 13.4544 1.5 14.25V15.75M16.5 15.75V14.25C16.4995 13.5853 16.2783 12.9396 15.871 12.4142C15.4638 11.8889 14.8936 11.5137 14.25 11.3475M12 2.3475C12.6453 2.51273 13.2173 2.88803 13.6257 3.41423C14.0342 3.94044 14.2559 4.58762 14.2559 5.25375C14.2559 5.91988 14.0342 6.56706 13.6257 7.09327C13.2173 7.61947 12.6453 7.99477 12 8.16"
+                  stroke-width="1.275"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="white"
+                />
+                <path
+                  id="svg10-Vector_2"
+                  d="M9.75 5.25C9.75 6.90685 8.40685 8.25 6.75 8.25C5.09315 8.25 3.75 6.90685 3.75 5.25C3.75 3.59315 5.09315 2.25 6.75 2.25C8.40685 2.25 9.75 3.59315 9.75 5.25Z"
+                  stroke-width="1.275"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="white"
+                />
+              </g>
+            </svg>
+            <i
+              ><svg
+                class=""
+                aria-hidden="true"
+                preserveAspectRatio="none"
+                overflow="visible"
+                style="display: block"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  id="svg11-User count badge"
+                  cx="7"
+                  cy="7"
+                  r="7"
+                  fill="#45B189"
+                />
+              </svg>
+              <span class="users-count">5</span></i
+            >
+          </button>
+        </div>
+        <section
+          class="users-panel"
+          id="usersPanel"
+          role="dialog"
+          aria-labelledby="usersTitle"
+          hidden
+        >
+          <header class="users-panel-head">
+            <div>
+              <strong id="usersTitle" data-i18n="usersTitle"
+                >Active users</strong
+              >
+              <p data-i18n="usersSubtitle">Signed in to the website</p>
+            </div>
+            <span class="online-pill"
+              ><i aria-hidden="true"></i><b class="online-count">5</b
+              ><span data-i18n="connected">online</span></span
+            >
+          </header>
+          <ul class="users-list" id="usersList" aria-label="Users"></ul>
+          <footer class="users-panel-foot">
+            <div class="popup-manager-avatar" data-i18n="initials">WM</div>
+            <div class="popup-manager-copy">
+              <strong data-i18n="accountName">Warehouse Manager</strong
+              ><span data-i18n="popupRole">Admin</span>
+            </div>
+            <button
+              type="button"
+              class="logout"
+              data-i18n-aria="logout"
+              aria-label="Log out"
+              title="Log out"
+            >
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M8 3H4.5A1.5 1.5 0 0 0 3 4.5v11A1.5 1.5 0 0 0 4.5 17H8M11 6l4 4-4 4M15 10H7"
+                />
+              </svg>
+            </button>
+          </footer>
+        </section>
+      </aside>
+      <main class="main purchase-main">
+        <header class="topbar purchase-topbar">
+          <div class="purchase-heading">
+            <h1 class="page-title" data-i18n="title">New purchase order</h1>
+            <p class="page-subtitle" data-i18n="subtitle">
+              Choose a supplier and the items to order
+            </p>
+          </div>
+          <div class="tools purchase-tools">
+            <label class="quick-search"
+              ><svg viewBox="0 0 20 20" aria-hidden="true">
+                <circle cx="8.7" cy="8.7" r="5.8"></circle>
+                <path d="m13 13 4.2 4.2"></path></svg
+              ><input
+                id="productSearch"
+                type="search"
+                list="productSuggestions"
+                placeholder="Search products, SKUs..."
+                aria-label="Search products, SKUs..."
+            /></label>
+            <datalist id="productSuggestions">
+              <option value="Product 1 · SKU-2210"></option>
+              <option value="Product 2 · SKU-3087"></option>
+              <option value="Product 3 · SKU-1042"></option>
+              <option value="Product 4 · SKU-2301"></option>
+            </datalist>
+            <div class="language" aria-label="Language">
+              <button type="button" data-lang="en">English</button
+              ><button type="button" data-lang="ar">العربية</button>
+            </div>
+            <button class="bell" type="button" aria-label="Notifications">
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path
+                  d="M16 14H4l1.4-1.8a4 4 0 0 0 .8-2.4V8a3.8 3.8 0 1 1 7.6 0v1.8a4 4 0 0 0 .8 2.4L16 14ZM8 17h4"
+                />
+              </svg>
+            </button>
+            <button
+              class="cancel-button"
+              id="cancelOrder"
+              type="button"
+              data-i18n="cancel"
+            >
+              Cancel
+            </button>
+          </div>
+        </header>
+        <div class="order-layout">
+          <div class="order-column">
+            <section
+              class="order-card supplier-card"
+              aria-labelledby="supplierStepTitle"
+            >
+              <h2 id="supplierStepTitle" data-i18n="supplierStep">
+                1. Supplier
+              </h2>
+              <div class="supplier-fields">
+                <div class="form-control">
+                  <label for="supplierPickerButton" data-i18n="supplier"
+                    >Supplier</label
+                  >
+                  <div class="supplier-picker">
+                    <button
+                      class="supplier-picker-button"
+                      id="supplierPickerButton"
+                      type="button"
+                      aria-controls="supplierMenu"
+                      aria-expanded="false"
+                    >
+                      <span id="supplierCurrent">Company name</span
+                      ><svg
+                        class="supplier-chevron"
+                        viewBox="0 0 14 14"
+                        aria-hidden="true"
+                      >
+                        <path d="m3.5 5.25 3.5 3.5 3.5-3.5" />
+                      </svg></button
+                    ><select
+                      id="supplierSelect"
+                      class="supplier-value"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <option value="s1" selected>Company name</option>
+                      <option value="s2">Company name</option>
+                      <option value="s3">Company name</option>
+                      <option value="s4">Company name</option>
+                      <option value="s5">Company name</option>
+                    </select>
+                    <section
+                      class="supplier-menu"
+                      id="supplierMenu"
+                      role="dialog"
+                      aria-label="Choose a supplier"
+                      hidden
+                    >
+                      <label class="supplier-search"
+                        ><svg viewBox="0 0 20 20" aria-hidden="true">
+                          <circle cx="8.7" cy="8.7" r="5.8"></circle>
+                          <path d="m13 13 4.2 4.2"></path></svg
+                        ><input
+                          id="supplierFilter"
+                          type="search"
+                          placeholder="Search suppliers..."
+                          aria-label="Search suppliers..."
+                      /></label>
+                      <ul class="supplier-options" id="supplierOptions"></ul>
+                      <button
+                        class="add-supplier"
+                        id="addSupplier"
+                        type="button"
+                      >
+                        <span aria-hidden="true">+</span
+                        ><span data-i18n="addSupplier">Add supplier</span>
+                      </button>
+                    </section>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="deliveryDate" data-i18n="expectedDelivery"
+                    >Expected delivery</label
+                  >
+                  <div class="date-control">
+                    <input
+                      id="deliveryDateLabel"
+                      type="text"
+                      value="18 Oct 2026"
+                      readonly
+                      aria-hidden="true"
+                      tabindex="-1"
+                    /><button
+                      class="date-picker-button"
+                      id="openDatePicker"
+                      type="button"
+                      aria-label="Choose expected delivery date"
+                      title="Choose date"
+                      aria-controls="dateCalendar"
+                      aria-expanded="false"
+                    >
+                      <svg viewBox="0 0 20 22" aria-hidden="true">
+                        <rect
+                          x="1"
+                          y="2"
+                          width="18"
+                          height="19"
+                          rx="1.5"
+                          fill="#fff"
+                          stroke="#b9c4d5"
+                        />
+                        <path
+                          d="M1.5 3.5A1.5 1.5 0 0 1 3 2h14a1.5 1.5 0 0 1 1.5 1.5V8h-17V3.5Z"
+                          fill="#24355f"
+                        />
+                        <text
+                          x="10"
+                          y="6.2"
+                          fill="#fff"
+                          text-anchor="middle"
+                          font-size="4.2"
+                          font-family="Arial,sans-serif"
+                        >
+                          July
+                        </text>
+                        <text
+                          x="10"
+                          y="17"
+                          fill="#111827"
+                          text-anchor="middle"
+                          font-size="9.5"
+                          font-family="Arial,sans-serif"
+                        >
+                          17
+                        </text>
+                      </svg></button
+                    ><input
+                      id="deliveryDate"
+                      class="native-date-input"
+                      type="date"
+                      value="2026-10-18"
+                      aria-label="Expected delivery date"
+                    />
+                    <section
+                      class="calendar-popover"
+                      id="dateCalendar"
+                      role="dialog"
+                      aria-label="Choose a date"
+                      hidden
+                    >
+                      <header class="calendar-header">
+                        <button
+                          type="button"
+                          data-calendar-prev
+                          aria-label="Previous month"
+                        >
+                          ‹</button
+                        ><strong id="calendarMonth">October 2026</strong
+                        ><button
+                          type="button"
+                          data-calendar-next
+                          aria-label="Next month"
+                        >
+                          ›
+                        </button>
+                      </header>
+                      <div
+                        class="calendar-weekdays"
+                        id="calendarWeekdays"
+                        aria-hidden="true"
+                      ></div>
+                      <div
+                        class="calendar-grid"
+                        id="calendarGrid"
+                        role="grid"
+                      ></div>
+                      <footer class="calendar-footer">
+                        <button type="button" data-calendar-clear>Clear</button
+                        ><button type="button" data-calendar-today>
+                          Today
+                        </button>
+                      </footer>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class="order-card items-card"
+              aria-labelledby="itemsStepTitle"
+            >
+              <h2 id="itemsStepTitle" data-i18n="itemsStep">2. Items</h2>
+              <div class="table-scroll">
+                <table class="items-table">
+                  <thead>
+                    <tr>
+                      <th data-i18n="product">PRODUCT</th>
+                      <th data-i18n="sku">SKU</th>
+                      <th data-i18n="qty">QTY</th>
+                      <th data-i18n="unitCost">UNIT COST (EGP)</th>
+                      <th data-i18n="lineTotal">TOTAL (EGP)</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="itemsBody"></tbody>
+                </table>
+              </div>
+              <button class="add-item" id="addItem" type="button">
+                <span aria-hidden="true">+</span>
+                <span data-i18n="addItem">Add item</span>
+              </button>
+            </section>
+          </div>
+          <aside class="summary-card" aria-labelledby="summaryTitle">
+            <h2 id="summaryTitle" data-i18n="summary">Summary</h2>
+            <dl class="summary-list">
+              <div class="summary-row">
+                <dt data-i18n="supplier">Supplier</dt>
+                <dd id="summarySupplier">Nile Foods Co.</dd>
+              </div>
+              <div class="summary-row">
+                <dt data-i18n="itemsLabel">Items</dt>
+                <dd id="summaryItems">1</dd>
+              </div>
+              <div class="summary-row">
+                <dt data-i18n="expectedLabel">Expected</dt>
+                <dd id="summaryDate">18 Oct</dd>
+              </div>
+              <div class="summary-row total-row">
+                <dt data-i18n="total">Total</dt>
+                <dd id="summaryTotal">EGP 5,000</dd>
+              </div>
+            </dl>
+            <p class="ai-suggestion" data-i18n="suggestion">
+              Suggested by AI forecast: reorder 400 units of Product 1.
+            </p>
+            <button
+              class="submit-order"
+              id="submitOrder"
+              type="button"
+              data-i18n="submit"
+            >
+              Submit for approval
+            </button>
+            <button
+              class="save-draft"
+              id="saveDraft"
+              type="button"
+              data-i18n="saveDraft"
+            >
+              Save draft
+            </button>
+            <p class="order-message" id="orderMessage" role="status" hidden></p>
+          </aside>
+        </div>
+        <footer class="main-footer" data-i18n="footer">
+          © 2027 Smart Warehouse. All rights reserved.
+        </footer>
+      </main>
+    </div>
+    <script src="new-purchase-orders.js"></script>
+  </body>
+</html>
